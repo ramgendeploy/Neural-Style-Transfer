@@ -7,7 +7,7 @@ from skimage import color
 
 def imread(path, mode="RGB"):
     # Loads data in HxW format, then transposes to correct format
-    img = np.array(imageio.imread(path, pilmode=mode))
+    img = np.array(imageio.imread(path, pilmode=mode), dtype=np.uint8)
     return img
     
 
